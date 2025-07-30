@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
   margin: 0;
+  padding: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -23,4 +26,42 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+/* solution */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: block;
+  margin: 10px 20px;
+}
+
+.footer {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  padding-right: 40px;
+  background-color: #eee;
 }
